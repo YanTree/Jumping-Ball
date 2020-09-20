@@ -12,6 +12,7 @@ public class PlayerCollision : MonoBehaviour
         {
             PC.enabled = false; // 是的话，禁止玩家移动
             FindObjectOfType<GameManager>().PlayerDied(); // 执行 PlayDied() 函数，调出死亡界面
+            FindObjectOfType<AudioManager>().Play("playerdied");
         }   
     }
 }

@@ -17,6 +17,7 @@ public class SlideTrigger : MonoBehaviour
     {
         Debug.Log("Enter Slide Trigger!");
         touchTrigger = true;                  // touchTrigger 就为真
+        FindObjectOfType<AudioManager>().Play("elevator");
     }
 
     bool toTop()                              // 判断 Slide 是否到达顶端
@@ -33,5 +34,7 @@ public class SlideTrigger : MonoBehaviour
     {
         if (!toTop() && touchTrigger)
             MoveUp();
+        else
+            FindObjectOfType<AudioManager>().Stop("elevator");
     }
 }

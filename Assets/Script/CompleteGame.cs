@@ -10,5 +10,6 @@ public class CompleteGame : MonoBehaviour
     {
         GM.CompleteGame(); // 加载胜利时的UI
         player.GetComponent<PlayerMove>().enabled = false; // 静止玩家移动
+        FindObjectOfType<AudioManager>().Play("comgame");
     }
 }

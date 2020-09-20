@@ -18,6 +18,7 @@ public class SwitchSlideTrigger : MonoBehaviour
         if (!isGreen)
         {
             _Material.color = Color.green;
+            FindObjectOfType<AudioManager>().Play("switch");
             isGreen = true;
         }
     }

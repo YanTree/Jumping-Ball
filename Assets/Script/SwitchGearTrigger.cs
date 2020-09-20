@@ -18,6 +18,7 @@ public class SwitchGearTrigger : MonoBehaviour
         if (isGreen == false)          // 判断开关是否打开，red 为初始值，代表关闭
         {
             _Material.color = Color.green; // 改变开关的颜色为绿色，代表打开
+            FindObjectOfType<AudioManager>().Play("switch");
             isGreen = true;
         }
     }

@@ -9,5 +9,6 @@ public class TrapTrigger : MonoBehaviour
     private void OnTriggerEnter() // 当玩家触发 Trigger
     {
         GM.PlayerDied();          // 代表着玩家死亡
+        FindObjectOfType<AudioManager>().Play("playerdied");
     }
 }

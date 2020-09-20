@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
     public void Restart()
     {
         Time.timeScale = 1f;        // 恢复游戏进程，表现出运动的画面
+        FindObjectOfType<AudioManager>().Play("button");
         SwitchGearTrigger.isGreen = false;
         SwitchSlideTrigger.isGreen = false;
         ArcPoint.isGreen = false;
@@ -56,6 +57,7 @@ public class GameManager : MonoBehaviour
     // Quit Game
     public void Quit()
     {
+        FindObjectOfType<AudioManager>().Play("button");
         Debug.Log("Quit!");
         Application.Quit();
     }
@@ -63,6 +65,7 @@ public class GameManager : MonoBehaviour
     // Pause Menu
     public void Resume()
     {
+        FindObjectOfType<AudioManager>().Play("button");
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;        // 恢复游戏进程，表现出运动的画面
         gameIsPause = false;
@@ -76,7 +79,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("arcPoint: " + arcPoint);
+        //Debug.Log("arcPoint: " + arcPoint);
         if (Input.GetKeyDown(KeyCode.Escape))  // 当按下 Escape 键，跳出暂停UI
         {
             if(gameIsPause)
@@ -96,6 +99,7 @@ public class GameManager : MonoBehaviour
         SwitchGearTrigger.isGreen = false;
         SwitchSlideTrigger.isGreen = false;
         ArcPoint.isGreen = false;
+        FindObjectOfType<AudioManager>().Play("button");
         SceneManager.LoadScene("Scenes/Menu");
     }
 }
