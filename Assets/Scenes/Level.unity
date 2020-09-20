@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.8867924, g: 0.8867924, b: 0.8867924, a: 1}
+  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -1271,7 +1271,7 @@ Transform:
   m_LocalScale: {x: 1.5, y: 3.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1609087644}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &417090580
 BoxCollider:
@@ -2327,7 +2327,7 @@ Transform:
   m_LocalScale: {x: 15, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1609087644}
-  m_RootOrder: 27
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &780341360
 BoxCollider:
@@ -3575,7 +3575,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105501489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.38, y: 2.33, z: 0}
+  m_LocalPosition: {x: 203.7, y: 1.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5564,18 +5564,18 @@ Transform:
   - {fileID: 941868644}
   - {fileID: 2037644589}
   - {fileID: 1822542203}
+  - {fileID: 1938013577}
   - {fileID: 684281037}
   - {fileID: 2019993349}
   - {fileID: 2009075543}
-  - {fileID: 1938013577}
   - {fileID: 1519764617}
-  - {fileID: 1177137871}
   - {fileID: 417090579}
+  - {fileID: 1177137871}
   - {fileID: 1132071991}
+  - {fileID: 780341359}
   - {fileID: 543450652895658384}
   - {fileID: 1190420815}
   - {fileID: 1203929407}
-  - {fileID: 780341359}
   - {fileID: 1820921194}
   - {fileID: 126676647}
   - {fileID: 941924565}
@@ -7163,7 +7163,7 @@ Transform:
   m_LocalScale: {x: 6, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1609087644}
-  m_RootOrder: 19
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!65 &1938013578
 BoxCollider:
